@@ -16,7 +16,7 @@ DO NOT PORT FORWARD `RESTAPIPort`
 3. Run `npm install`
 4. Locate your `PalWorldSettings.ini` and set `RESTAPIEnabled=True`, note the port number in `PublicPort=`, note the port number in `RESTAPIPort=`, also note the password in `AdminPassword=` (set one if you do not have one)
 5. Copy the `.env.template` file to `.env`
-6. Update the values for `webPassword`, `webPort`, `gamePort`, `steamcmd`, and `palworld` in `.env`
+6. Update the values for `webPassword`, `webPort`, `gamePort`, `steamcmd`, `palworld`, and `pollTime` in `.env`
 
 ## How to Run
 1. Open up a terminal in this directory and run `node .`

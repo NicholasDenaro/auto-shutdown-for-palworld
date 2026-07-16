@@ -14,6 +14,7 @@ const password = process.env.webPassword;
 const basicAuth = `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`;
 const steamCMDFullPath = process.env.steamcmd;
 const palserverFullPath = process.env.palworld;
+const pollTime = 1000 * 60 * Number(process.env.pollTime);
 
 function log(rl, ...message) {
   output(console.log, process.stdout, rl, ...message);
@@ -161,7 +162,7 @@ async function startPalworld(rl) {
       break;
     }
 
-    await new Promise(async (resolve, reject) => setTimeout(resolve, 1000 * 60 * 10));
+    await new Promise(async (resolve, reject) => setTimeout(resolve, pollTime));
   }
 
   await promise;
