@@ -20,3 +20,6 @@ DO NOT PORT FORWARD `RESTAPIPort`
 
 ## How to Run
 1. Open up a terminal in this directory and run `node .`
+
+## How to Stop
+Type in `quit` and hit the enter key.
